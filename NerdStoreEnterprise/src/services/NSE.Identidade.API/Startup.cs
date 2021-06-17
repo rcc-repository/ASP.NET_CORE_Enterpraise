@@ -21,12 +21,12 @@ namespace NSE.Identidade.API
 
             services.AddApiConfiguration();
 
-            //services.AddSwaggerConfiguration();
+            services.AddSwaggerConfiguration();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            //app.UseSwaggerConfiguration();
+            app.UseSwaggerConfiguration();
 
             app.UseApiConfiguration(env);
 
