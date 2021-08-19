@@ -10,7 +10,7 @@ using NSE.Identidade.API.Data;
 namespace NSE.Identidade.API.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20210616133247_Initial")]
+    [Migration("20210819191131_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
