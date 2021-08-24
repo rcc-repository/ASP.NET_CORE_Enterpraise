@@ -2,10 +2,11 @@
 using System.Linq;
 using NSE.Catalogo.API.Models;
 using System.Threading.Tasks;
+using NSE.Core.Data;
 
 namespace NSE.Catalogo.API.Data
 {
-    public class CatalogoContext : DbContext
+    public class CatalogoContext : DbContext, IUnitOfWork
     {
         public CatalogoContext(DbContextOptions<CatalogoContext> options)
             : base(options) { }
