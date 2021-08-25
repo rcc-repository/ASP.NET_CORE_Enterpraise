@@ -27,5 +27,9 @@
     <Folder Include="Data\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\NSE.WebAPI.Core\NSE.WebAPI.Core.csproj" />
+  </ItemGroup>
+
 
 </Project>
