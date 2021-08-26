@@ -9,7 +9,8 @@ USE NerdStoreEnterpriseDB
 select * from AspNetUsers
 select * from AspNetUserClaims
 
---INSERT INTO AspNetUserClaims VALUES (NULL, 'e753877f-4e47-42f8-831f-d321aff89873', '', '')
+--INSERT INTO AspNetUserClaims VALUES ('5fd23f32-8206-44f7-b344-2e332f6d63cb', 'Catalogo', 'Consulta')
+--UPDATE AspNetUserClaims SET ClaimValue = 'Consultasss' 
 
 select * from AspNetUserLogins
 
