@@ -10,7 +10,8 @@ select * from AspNetUsers
 select * from AspNetUserClaims
 
 --INSERT INTO AspNetUserClaims VALUES ('5fd23f32-8206-44f7-b344-2e332f6d63cb', 'Catalogo', 'Consulta')
---UPDATE AspNetUserClaims SET ClaimValue = 'Consultasss' 
+--UPDATE AspNetUserClaims SET ClaimValue = 'Consulta' 
+--UPDATE AspNetUserClaims SET ClaimValue = 'xx' 
 
 select * from AspNetUserLogins
 

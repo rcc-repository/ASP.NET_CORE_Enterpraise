@@ -31,7 +31,7 @@ namespace NSE.Catalogo.API.Controllers
         [HttpGet("produtos/{id}")]
         public async Task<Produto> ProdutoDetalhe(Guid id)
         {
-            //throw new Exception("Erro");
+            //throw new Exception("Erro"); //didi testar AddPolicyHandler e CircuitBreakerAsync
             return await _produtoRepository.ObterPorId(id);
         }
     }
