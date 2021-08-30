@@ -45,7 +45,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NSE.Pedido.API", "src\servi
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{BD0AEA35-DB32-4DF9-9ECA-64ACA409964B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NSE.WebAPI.Core", "NSE.WebAPI.Core\NSE.WebAPI.Core.csproj", "{B37E88DD-A5EB-4DD9-89A3-3B13ABE3BD99}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NSE.WebAPI.Core", "NSE.WebAPI.Core\NSE.WebAPI.Core.csproj", "{B37E88DD-A5EB-4DD9-89A3-3B13ABE3BD99}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
