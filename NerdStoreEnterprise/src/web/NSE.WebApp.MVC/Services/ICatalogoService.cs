@@ -14,10 +14,10 @@ namespace NSE.WebApp.MVC.Services
 
     public interface ICatalogoServiceRefit
     {
-        [Get("/catalogo/produtos/")]
+        [Get("api/catalogo/produtos/")]
         Task<IEnumerable<ProdutoViewModel>> ObterTodos();
 
-        [Get("/catalogo/produtos/{id}")]
+        [Get("api/catalogo/produtos/{id}")]
         Task<ProdutoViewModel> ObterPorId(Guid id);
     }
 }
