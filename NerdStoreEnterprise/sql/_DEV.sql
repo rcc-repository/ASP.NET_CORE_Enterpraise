@@ -1,13 +1,23 @@
 
 
+--Criando o container do RabbitMQ no Docker:
+--docker run -d --hostname rabbit-host --name rabbit-nerdstore -p 15672:15672 -p 5672:5672 rabbitmq:management
+--ver criado container no Docker
+--Para abrir no browser: http://localhost:15672/
+--
+
 USE NerdStoreEnterpriseDB
 
 --******************************************************************************************************************
 -- Identity
+
+--rodrigo.croci@gmail.com = !@Teste1122
+--rcc@gmail.com = Teste@123
 --******************************************************************************************************************
 
 select * from AspNetUsers
 select * from AspNetUserClaims
+
 
 --INSERT INTO AspNetUserClaims VALUES ('5fd23f32-8206-44f7-b344-2e332f6d63cb', 'Catalogo', 'Consulta')
 --UPDATE AspNetUserClaims SET ClaimValue = 'Consulta' 
