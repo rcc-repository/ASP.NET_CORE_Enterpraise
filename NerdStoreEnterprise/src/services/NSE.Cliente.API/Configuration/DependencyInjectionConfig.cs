@@ -5,7 +5,7 @@ using NSE.Cliente.API.Application.Commands;
 using NSE.Cliente.API.Data;
 using NSE.Cliente.API.Data.Repository;
 using NSE.Cliente.API.Models;
-using NSE.Clientes.API.Application.Events;
+using NSE.Cliente.API.Application.Events;
 using NSE.Core.Mediator;
 
 namespace NSE.Cliente.API.Configuration

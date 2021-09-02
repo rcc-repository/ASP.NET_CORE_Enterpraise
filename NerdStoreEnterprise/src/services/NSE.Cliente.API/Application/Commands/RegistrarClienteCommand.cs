@@ -57,4 +57,5 @@ namespace NSE.Cliente.API.Application.Commands
                 return Core.DomainObjects.Email.Validar(email);
             }
         }
+    }
 }

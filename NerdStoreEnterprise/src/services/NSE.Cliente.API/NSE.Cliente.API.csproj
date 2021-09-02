@@ -19,7 +19,6 @@
 
   <ItemGroup>
     <Folder Include="Application\Queries\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Configuration\" />
     <Folder Include="Data\" />
     <Folder Include="Models\" />

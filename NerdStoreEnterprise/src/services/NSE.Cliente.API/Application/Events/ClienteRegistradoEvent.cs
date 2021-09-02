@@ -1,7 +1,7 @@
 ﻿using System;
 using NSE.Core.Messages;
 
-namespace NSE.Clientes.API.Application.Events
+namespace NSE.Cliente.API.Application.Events
 {
     public class ClienteRegistradoEvent : Event
     {

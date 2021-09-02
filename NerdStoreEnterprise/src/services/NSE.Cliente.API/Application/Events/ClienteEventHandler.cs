@@ -2,7 +2,7 @@
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace NSE.Clientes.API.Application.Events
+namespace NSE.Cliente.API.Application.Events
 {
     public class ClienteEventHandler : INotificationHandler<ClienteRegistradoEvent>
     {
