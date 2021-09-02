@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
+﻿using Microsoft.AspNetCore.Mvc;
 using NSE.WebApp.MVC.Models;
 
 namespace NSE.WebApp.MVC.Controllers
@@ -23,6 +17,7 @@ namespace NSE.WebApp.MVC.Controllers
 
             return View("Error", modelErro);
         }
+
 
         [Route("erro/{id:length(3,3)}")]
         public IActionResult Error(int id)

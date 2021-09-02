@@ -9,7 +9,6 @@ using NSE.WebAPI.Core.Identidade;
 
 namespace NSE.Catalogo.API.Controllers
 {
-    [Route("api/catalogo")]
     [Authorize]
     public class CatalogoController : MainController
     {
@@ -21,17 +20,16 @@ namespace NSE.Catalogo.API.Controllers
         }
 
         [AllowAnonymous]
-        [HttpGet("produtos")]
+        [HttpGet("catalogo/produtos")]
         public async Task<IEnumerable<Produto>> Index()
         {
             return await _produtoRepository.ObterTodos();
         }
 
-        [ClaimsAuthorize("Catalogo", "Consulta")]
-        [HttpGet("produtos/{id}")]
+        [ClaimsAuthorize("Catalogo","Ler")]
+        [HttpGet("catalogo/produtos/{id}")]
         public async Task<Produto> ProdutoDetalhe(Guid id)
         {
-            //throw new Exception("Erro"); //didi testar AddPolicyHandler e CircuitBreakerAsync
             return await _produtoRepository.ObterPorId(id);
         }
     }

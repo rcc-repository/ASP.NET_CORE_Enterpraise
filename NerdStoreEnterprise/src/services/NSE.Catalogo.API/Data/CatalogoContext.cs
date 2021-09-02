@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using NSE.Catalogo.API.Models;
-using System.Threading.Tasks;
 using NSE.Core.Data;
+using System.Threading.Tasks;
 using FluentValidation.Results;
 using NSE.Core.Messages;
 

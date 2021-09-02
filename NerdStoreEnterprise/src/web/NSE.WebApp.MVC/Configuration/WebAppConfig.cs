@@ -1,11 +1,11 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using System.Globalization;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using NSE.WebApp.MVC.Extensions;
-using System.Globalization;
 
 namespace NSE.WebApp.MVC.Configuration
 {
@@ -22,14 +22,7 @@ namespace NSE.WebApp.MVC.Configuration
         {
             if (env.IsDevelopment())
             {
-                //didi - voltar
-                //app.UseDeveloperExceptionPage();
-
-                //didi - tirar
-                app.UseExceptionHandler("/erro/500");
-                app.UseStatusCodePagesWithRedirects("/erro/{0}");
-                app.UseHsts();
-
+                app.UseDeveloperExceptionPage();
             }
             else
             {

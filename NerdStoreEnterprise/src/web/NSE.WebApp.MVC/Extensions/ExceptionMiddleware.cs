@@ -54,6 +54,5 @@ namespace NSE.WebApp.MVC.Extensions
         {
             context.Response.Redirect("/sistema-indisponivel");
         }
-
     }
 }

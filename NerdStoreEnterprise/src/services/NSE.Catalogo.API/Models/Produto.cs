@@ -1,12 +1,9 @@
-﻿using NSE.Core.DomainObjects;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System;
+using NSE.Core.DomainObjects;
 
 namespace NSE.Catalogo.API.Models
 {
-    public class Produto: Entity, IAggregateRoot
+    public class Produto : Entity, IAggregateRoot
     {
         public string Nome { get; set; }
         public string Descricao { get; set; }

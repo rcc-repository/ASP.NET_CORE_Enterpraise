@@ -6,20 +6,18 @@ using Refit;
 
 namespace NSE.WebApp.MVC.Services
 {
-
     public interface ICatalogoService
     {
         Task<IEnumerable<ProdutoViewModel>> ObterTodos();
         Task<ProdutoViewModel> ObterPorId(Guid id);
     }
 
-    //Refit
     public interface ICatalogoServiceRefit
     {
-        [Get("/api/catalogo/produtos/")]
+        [Get("/catalogo/produtos/")]
         Task<IEnumerable<ProdutoViewModel>> ObterTodos();
 
-        [Get("/api/catalogo/produtos/{id}")]
+        [Get("/catalogo/produtos/{id}")]
         Task<ProdutoViewModel> ObterPorId(Guid id);
     }
 }
