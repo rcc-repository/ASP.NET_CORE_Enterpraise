@@ -12,13 +12,13 @@ USE NerdStoreEnterpriseDB
 --******************************************************************************************************************
 -- Identity
 
---rodrigo.croci@gmail.com = !@Teste1122
 --rcc@gmail.com = Teste@123
 --******************************************************************************************************************
 
 --INSERT INTO AspNetUserClaims VALUES ('5fd23f32-8206-44f7-b344-2e332f6d63cb', 'Catalogo', 'Consulta')
 --UPDATE AspNetUserClaims SET ClaimValue = 'Consulta' 
 --UPDATE AspNetUserClaims SET ClaimValue = 'xx' 
+--DELETE FROM AspNetUsers
 
 select * from AspNetUsers
 select * from AspNetUserClaims
