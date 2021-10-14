@@ -15,14 +15,16 @@
 --INSERT INTO AspNetUserClaims VALUES ('5fd23f32-8206-44f7-b344-2e332f6d63cb', 'Catalogo', 'Consulta')
 --UPDATE AspNetUserClaims SET ClaimValue = 'Consulta' 
 --UPDATE AspNetUserClaims SET ClaimValue = 'xx' 
---DELETE FROM AspNetUsers
+
+DELETE FROM AspNetUsers
+DELETE FROM Clientes
 
 USE NerdStoreEnterpriseDB
 
-select * from AspNetUserClaims
-
 select * from AspNetUsers
 SELECT * FROM Clientes
+
+select * from AspNetUserClaims
 
 SELECT * FROM Enderecos
 
