@@ -1,6 +1,11 @@
 
 
---Criando o container do RabbitMQ no Docker:
+--criando uma migration no Package Manager Console:
+--Setar Projeto:
+--Add-Migration <<nome migration>>
+--Update-Database
+
+--Criando o container do RabbitMQ no Docker (terminal):
 --docker run -d --hostname rabbit-host --name rabbit-nerdstore -p 15672:15672 -p 5672:5672 rabbitmq:management
 --ver criado container no Docker
 --Para abrir no browser: http://localhost:15672/
@@ -16,10 +21,10 @@
 --UPDATE AspNetUserClaims SET ClaimValue = 'Consulta' 
 --UPDATE AspNetUserClaims SET ClaimValue = 'xx' 
 
+USE NerdStoreEnterpriseDB
+
 DELETE FROM AspNetUsers
 DELETE FROM Clientes
-
-USE NerdStoreEnterpriseDB
 
 select * from AspNetUsers
 SELECT * FROM Clientes
