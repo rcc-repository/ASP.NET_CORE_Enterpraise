@@ -24,21 +24,6 @@ namespace NSE.Carrinho.API.Model
 
         public CarrinhoCliente() { }
 
-        internal void CalcularValorCarrinho()
-        {
-            ValorTotal = Itens.Sum(p => p.CalcularValor());
-        }
-
-        internal bool CarrinhoItemExistente(CarrinhoItem item)
-        {
-            return Itens.Any(p => p.ProdutoId == item.ProdutoId);
-        }
-
-        internal CarrinhoItem ObterPorProdutoId(Guid produtoId)
-        {
-            return Itens.FirstOrDefault(p => p.ProdutoId == produtoId);
-        }
-
         internal void AdicionarItem(CarrinhoItem item)
         {
             item.AssociarCarrinho(Id);
@@ -79,6 +64,22 @@ namespace NSE.Carrinho.API.Model
             Itens.Remove(ObterPorProdutoId(item.ProdutoId));
             CalcularValorCarrinho();
         }
+
+        internal void CalcularValorCarrinho()
+        {
+            ValorTotal = Itens.Sum(p => p.CalcularValor());
+        }
+
+        internal bool CarrinhoItemExistente(CarrinhoItem item)
+        {
+            return Itens.Any(p => p.ProdutoId == item.ProdutoId);
+        }
+
+        internal CarrinhoItem ObterPorProdutoId(Guid produtoId)
+        {
+            return Itens.FirstOrDefault(p => p.ProdutoId == produtoId);
+        }
+
 
         internal bool EhValido()
         {
