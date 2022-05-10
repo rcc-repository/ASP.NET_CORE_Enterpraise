@@ -12,14 +12,6 @@
 --Usuario:guest
 --senha:guest
 
---******************************************************************************************************************
--- Identity
---rodrigo.croci@gmail.com = Teste@123
---******************************************************************************************************************
-
---INSERT INTO AspNetUserClaims VALUES ('5fd23f32-8206-44f7-b344-2e332f6d63cb', 'Catalogo', 'Consulta')
---UPDATE AspNetUserClaims SET ClaimValue = 'Consulta' 
---UPDATE AspNetUserClaims SET ClaimValue = 'xx' 
 
 /*
 INSERT [dbo].[Produtos] ([Id], [Nome], [Descricao], [Ativo], [Valor], [DataCadastro], [Imagem], [QuantidadeEstoque]) VALUES (N'7d67df76-2d4e-4a47-a19c-08eb80a9060b', N'Camiseta Code Life Preta', N'Camiseta 100% algodão, resistente a lavagens e altas temperaturas.', 1, CAST(90.00 AS Decimal(18, 2)), CAST(N'2019-07-19T00:00:00.0000000' AS DateTime2), N'camiseta2.jpg', 100)
@@ -32,6 +24,14 @@ INSERT [dbo].[Produtos] ([Id], [Nome], [Descricao], [Ativo], [Valor], [DataCadas
 INSERT [dbo].[Produtos] ([Id], [Nome], [Descricao], [Ativo], [Valor], [DataCadastro], [Imagem], [QuantidadeEstoque]) VALUES (N'20e08cd4-2402-4e76-a3c9-a026185b193d', N'Caneca Turn Coffee in Code', N'Caneca de porcelana com impressão térmica de alta resistência.', 1, CAST(20.00 AS Decimal(18, 2)), CAST(N'2019-07-19T00:00:00.0000000' AS DateTime2), N'caneca3.jpg', 0)
 */
 
+/*
+INSERT INTO AspNetUserClaims VALUES ('2dd3945b-ba97-40c5-a1df-6dd2113a3195', 'Catalogo', 'Consulta')
+UPDATE AspNetUserClaims SET ClaimValue = 'Consulta' 
+UPDATE AspNetUserClaims SET ClaimValue = 'xx' 
+*/
+
+-- Identity
+--rodrigo.croci@gmail.com = Teste@123
 
 USE NerdStoreEnterpriseDB
 
@@ -44,6 +44,11 @@ SELECT * FROM PRODUTOS
 
 SELECT * FROM CARRINHOCLIENTE
 SELECT * FROM CARRINHOITENS
+
+delete from CARRINHOITENS
+delete from CARRINHOCLIENTE
+
+
 
 
 
